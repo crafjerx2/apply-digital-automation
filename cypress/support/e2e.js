@@ -2,6 +2,7 @@
 import './commands';
 import 'cypress-mochawesome-reporter/register';
 import { signupAndLoginPage } from '../pages';
+import { navbar } from '../components';
 
 Cypress.Commands.add('authenticate', (email, password) => { 
     signupAndLoginPage
@@ -18,6 +19,9 @@ Cypress.Commands.add('authenticate', (email, password) => {
  });
 
  Cypress.Commands.add('setValue', (selector, value) => {
-    cy.log(value);
     cy.get(selector).invoke('val', value).trigger('input');
+  });
+
+  Cypress.Commands.add('logout', () => {
+    cy.get(navbar.logoutLink).click();
   });

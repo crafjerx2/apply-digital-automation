@@ -4,6 +4,7 @@ class Navbar  {
         this.productLink = '[href="/products"';
         this.cartLink = 'li > a[href="/view_cart"]';
         this.signupAndLoginLink = 'li > a[href="/login"]';
+        this.logoutLink = 'li > a[href="/logout"]';
     }
 
     clickProduct() {

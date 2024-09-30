@@ -67,5 +67,7 @@ describe("Product Purchase and Checkout Flow", () => {
     paymentPage
       .proceedPayment(creditCard)
       .IsPaymentSuccess();
+
+    cy.logout();
   });
 });
