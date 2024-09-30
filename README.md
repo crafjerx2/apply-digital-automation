@@ -14,6 +14,8 @@ This project automates the testing of a product purchase and checkout flow on bo
 - Node.js - Runtime environment.
 - Faker.js - Library for generating fake data (optional).
 - cypress-mochawesome-reporter - Library for reports in cypress
+- @cypress-audit/lighthouse has provided tools and metrics concerning applications performances
+- @cypress-audit/pa11y has provided tools to analyze and improve the accessibility status of applications
 
 ## Prerequisites
 - Node.js (v14+)

@@ -5,6 +5,8 @@ cypress.env.json
 # Cypress videos and screenshots (optional)
 cypress/screenshots/
 cypress/videos/
+cypress/downloads/
+cypress/reports/
 
 # Node dependencies
 node_modules/
